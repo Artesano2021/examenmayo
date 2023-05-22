@@ -1,0 +1,33 @@
+@use "variables" as var;
+
+mat-card{
+    width: 284px;
+    height: 543px;
+    background-color: var.$primary;
+    color: var.$secondary;
+}
+
+.card-image{
+    margin-left: 55px;
+    width: 163px;
+    height: 117px;
+}
+
+button{
+    margin-left: 10rem;
+    background-color: var.$backgroundResaltar;
+    color: var.$buttons;
+    &:hover{
+        color:red;
+    }
+}
+
+mat-card-title{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+p{
+  
+    font-family: 'Merriweather', serif;
+}

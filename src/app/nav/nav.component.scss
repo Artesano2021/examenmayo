@@ -1,0 +1,41 @@
+@use "variables" as var;
+
+.mat-toolbar{
+    background-color: var.$primary;
+    display:flex;
+}
+
+.options{
+    display:flex;
+    justify-content: space-between;
+}
+
+.tittle{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    font-family: 'Shadows Into Light', cursive;
+    color: var.$secondary;
+}
+
+.matbtn{
+    font-family: 'Shadows Into Light', cursive;
+    margin-left: 32rem;
+    color: var.$backgrounds;
+}
+
+.mat{
+    font-family: 'Shadows Into Light', cursive;
+    background-color: var.$primary;
+    color: white;
+   
+}
+
+.btn-mat{
+    color: white;
+    background-color: var.$primary;
+    &:hover{
+        background-color: yellow;
+    }
+}

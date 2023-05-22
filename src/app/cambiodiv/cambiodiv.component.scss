@@ -1,0 +1,10 @@
+@use "variables" as var;
+
+.flex-container{
+    display: flex;
+    flex-direction:column;
+}
+
+input{
+    background-color: var.$primary;
+}

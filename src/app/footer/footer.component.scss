@@ -1,0 +1,45 @@
+@use "variables" as var;
+
+
+footer{
+    background-color: var.$primary;
+    display: flex;
+    align-items: center;
+    margin-top:5rem;
+    justify-content: space-between;
+    width:100%;
+    
+}
+
+
+
+li {
+    color: var.$secondary;
+    list-style: none;
+    font-family: 'Merriweather', serif;
+}
+
+.ul-footer {
+    font-family: 'Kanit', sans-serif;
+}
+
+.li-footer{
+    text-decoration: none;
+}
+
+
+button{
+    margin-left: 10rem;
+    background-color: var.$backgroundResaltar;
+    color: var.$buttons;
+    &:hover{
+        color:red;
+    }
+}
+
+@media(max-width:733px) {
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+}

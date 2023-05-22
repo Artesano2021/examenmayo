@@ -1,0 +1,47 @@
+<!--<mat-toolbar>
+    <div class="title">
+        <h1>Londres</h1>
+    </div>
+    <div class="options">
+        <div class="option">
+            <button class="matbtn" mat-icon-button routerLink="/cambiodiv"><mat-icon>home</mat-icon>Cambio div</button>
+        </div>
+        <div class="option">
+            <button class="matbtn" mat-icon-button routerLink="/"><mat-icon>home</mat-icon>Home</button>
+        </div>
+       
+        <div class="option">
+            <button class="matbtn" mat-icon-button routerLink="/quever"><mat-icon>home</mat-icon>¿Qué ver?</button> 
+        </div>
+        
+    </div>
+</mat-toolbar>-->
+
+
+
+
+<div class="mat-toolbar">
+    <div class="title">
+        <h1>Londres</h1>
+    </div>
+    <div class="options">
+    <button mat-button [matMenuTriggerFor]="belowMenu"><mat-icon>home</mat-icon>Pestaña</button>
+<mat-menu class="mat" #belowMenu="matMenu" yPosition="below">
+  <button class="btn-mat" mat-menu-item routerLink="/quever">¿Qué ver?</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu"><mat-icon>home</mat-icon>Pestaña</button>
+<mat-menu class="mat"#beforeMenu="matMenu" xPosition="before">
+  <button class="btn-mat" mat-menu-item routerLink="/">Home</button>
+</mat-menu>
+
+
+<button mat-button [matMenuTriggerFor]="afterMenu"><mat-icon>home</mat-icon>Pestaña</button>
+<mat-menu class="mat" #afterMenu="matMenu" xPosition="after">
+  <button class="btn-mat" mat-menu-item routerLink="/cambiodiv">Cambio div</button>
+</mat-menu>
+</div>
+</div>
+
+
+<router-outlet></router-outlet>
